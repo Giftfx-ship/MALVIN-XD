@@ -1,62 +1,54 @@
 {
-  "name": "ᴍᴀʟᴠɪɴ-xᴅ",
-  "description": "Javascript WhatsApp bot made by ᴍᴀʟᴠɪɴ ᴋɪɴɢ",
+  "name": "Devmd-Xmas",
+  "description": "Javascript WhatsApp bot made by Devmd Team",
   "logo": "https://files.catbox.moe/qumhu4.jpg",
-  "keywords": ["MALVIN XD"],
+  "keywords": ["Devmd-Xmas", "WhatsApp Bot", "MD Bot"],
   "success_url": "/",
+  "stack": "container",
 
-    "stack": "container",
   "env": {
-      "SESSION_ID": {
-        "description": "Put your SESSION_ID here. Make sure it starts with malvin~",
-        "value":"",
-        "required": true
-        
-    },
-      "BOT_NAME": {
-        "description": "write here your bot name.",
-        "required": true,
-        "value": "ᴍᴀʟᴠɪɴ xᴅ" 
-        
-    },
-     "PREFIX": {
-       "description": "Bot command prefix, (e.g, . , ! @ etc",
-      "value": "."
-      "required": true,
-      
-    },
-      "MODE": {
-        "description": "Bot mode can be public, private, inbox or groups in small letters (e.g, public)",
-        "value":"private",
-        "required": true  
-        
-   },
-     "DESCRIPTION": {
-      "description": "add caption for menu and other",
-      "value": "> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ xᴅ*",
-      "required": true
-      
-   }, 
-
-    "OWNER_NUMBER": {
-      "description": "put the owner number for bot.",
-      "value": "263714757857"
-      "required": true
-      
-   },
-    "OWNER_NAME": {
-      "description": "Enter your name here",
+    "SESSION_ID": {
+      "description": "Put your SESSION_ID here. Make sure it starts with devmd~",
       "value": "",
       "required": true
+    },
+    "BOT_NAME": {
+      "description": "Write your bot name.",
+      "value": "Devmd-Xmas",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Bot command prefix, e.g., . , ! , @ etc.",
+      "value": ".",
+      "required": true
+    },
+    "MODE": {
+      "description": "Bot mode: public, private, inbox or groups (use lowercase).",
+      "value": "private",
+      "required": true
+    },
+    "DESCRIPTION": {
+      "description": "Add caption for menu and other places.",
+      "value": "> *© Powered by Devmd-Xmas*",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Put the owner number for the bot.",
+      "value": "0782569726",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Enter your name here",
+      "value": "Devmd",
+      "required": true
     }
+  },
 
-},
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
 
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
   "stack": "heroku-24"
 }
-  
