@@ -1,3 +1,4 @@
+# ────── Devmd-Xmas Dockerfile ──────
 FROM node:lts-buster
 
 # Set working directory
@@ -12,5 +13,5 @@ RUN npm install && npm install -g pm2
 # Expose the port your app listens on
 EXPOSE 7860
 
-# Start the app
+# Start the Devmd-Xmas bot
 CMD ["npm", "start"]
